@@ -4,3 +4,7 @@ html, body {
   padding: 0px;
 }
 
+span.strike {
+  text-decoration: line-through;
+}
+
