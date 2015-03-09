@@ -23,3 +23,7 @@ span.strike {
   margin-top: 30px;
   margin-bottom: 30px;
 }
+
+.row-last {
+  margin-bottom: 400px;
+}
