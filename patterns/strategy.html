@@ -51,6 +51,46 @@
           </p>
         </div>
       </div>
+      <div class="row">
+        <div class="header">
+          Code Sample
+        </div>
+        <p>
+          <code>
+            public interface RaceTrack() {
+              public void startRace();
+            }
+            
+            public class RaceTrackA implements RaceTrack {
+              public void startRace() {
+                turnRight();
+                turnRight();
+                turnLeft();
+              }
+            }
+            
+            public class RaceTrackB implements RaceTrack {
+              public void startRace() {
+                doBarrelRoll();
+                turnLeft();
+                doLoop();
+              }
+            }
+            
+            public class BigRedButton() {
+              public void pressButton() {
+                List<RaceTrack> tracks = new ArrayList<RaceTrack>();
+                tracks.add(new RaceTrackA());
+                tracks.add(new RaceTrackB());
+                
+                for (RaceTrack track : tracks) {
+                  track.startRace();
+                }
+              }
+            }
+          </code>
+        </p>
+      </div>
     </div>
     <footer class="footer">
       <div class="container">
