@@ -3,8 +3,8 @@ html {
   min-height: 100%;
 }
 
-span.strike {
-  text-decoration: line-through;
+.jumbotron {
+  margin-top: 80px;
 }
 
 .footer {
