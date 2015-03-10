@@ -58,37 +58,37 @@
         </div>
         <p>
           <pre>
-            public interface RaceTrack() {
-              public void startRace();
-            }
-            
-            public class RaceTrackA implements RaceTrack {
-              public void startRace() {
-                turnRight();
-                turnRight();
-                turnLeft();
-              }
-            }
-            
-            public class RaceTrackB implements RaceTrack {
-              public void startRace() {
-                doBarrelRoll();
-                turnLeft();
-                doLoop();
-              }
-            }
-            
-            public class BigRedButton() {
-              public void pressButton() {
-                List&lt;RaceTrack&gt; tracks = new ArrayList&lt;RaceTrack&gt;();
-                tracks.add(new RaceTrackA());
-                tracks.add(new RaceTrackB());
-                
-                for (RaceTrack track : tracks) {
-                  track.startRace();
-                }
-              }
-            }
+public interface RaceTrack() {
+  public void startRace();
+}
+
+public class RaceTrackA implements RaceTrack {
+  public void startRace() {
+    turnRight();
+    turnRight();
+    turnLeft();
+  }
+}
+
+public class RaceTrackB implements RaceTrack {
+  public void startRace() {
+    doBarrelRoll();
+    turnLeft();
+    doLoop();
+  }
+}
+
+public class BigRedButton() {
+  public void pressButton() {
+    List&lt;RaceTrack&gt; tracks = new ArrayList&lt;RaceTrack&gt;();
+    tracks.add(new RaceTrackA());
+    tracks.add(new RaceTrackB());
+    
+    for (RaceTrack track : tracks) {
+      track.startRace();
+    }
+  }
+}
           </pre>
         </p>
         <div class="header">
