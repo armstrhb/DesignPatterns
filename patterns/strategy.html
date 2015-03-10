@@ -90,6 +90,19 @@
             }
           </pre>
         </p>
+        <div class="header">
+          <h4>Explaination</h4>
+        </div>
+        <p>
+          The code sample above illustrates the description at the beginning of this page.  An interface, <code>RaceTrack</code>, 
+          contains one method, <code>startRace()</code>.  We can then implement the interface any number of times, and flesh out that method.
+          We do this a few times (with <code>RaceTrackA</code> and <code>RaceTrackB</code>.
+        </p>
+        <p>
+          The Strategy Pattern's benefit shows itself within our iterator block, where we traverse over a list of <code>RaceTrack</code> objects. For each <code>RaceTrack</code>, 
+          we invoke the <code>startRace()</code> method.  This method does different things, depending on the implemention, but to our parent class,
+          it's all the same.  
+        </p>
       </div>
     </div>
     <footer class="footer">
