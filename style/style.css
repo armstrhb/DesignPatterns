@@ -4,7 +4,7 @@ html {
 }
 
 .page-header {
-  margin-top: 80px;
+  margin-top: 80px !important;
 }
 
 .jumbotron {
