@@ -50,3 +50,8 @@ code, pre {
   margin-left: auto;
   margin-right: auto;
 }
+
+pre[class*=language-]>code[data-language] {
+  max-height: auto;
+  overflow: auto;
+}
