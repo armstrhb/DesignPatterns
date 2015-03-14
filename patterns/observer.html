@@ -1,0 +1,120 @@
+<html lang="en">
+  <head>
+    <title>Design Patterns | The Observer Pattern</title>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.css">
+    <link rel="stylesheet" type="text/css" href="../style/style.css">    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../index.html">Design Patterns</a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="../patterns.html">Patterns<span class="sr-only"> (current)</span></a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Site Map</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="page-header">
+        <h1>The Observer Pattern</h1>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="header">
+            <h3>Explained as to a 5 year old.</h3>
+          </div>        
+          <p>It is close to dinner time, and you're hungry.  Mommy or Daddy is cooking dinner.  You want to make sure that you
+          know dinner is ready as soon as it's ready.  Would you walk into the kitchen every 5 minutes and ask Mommy/Daddy if dinner
+          is ready?  Or, would you ask Mommy/Daddy to let you know when dinner's ready?  That way, you can do other things, like playing
+          or watching a cartoon.  When dinner is ready, you'll be told so, and until then, you don't have to think about it, except
+          when you're tummy reminds you.
+          </p>
+          <p>The <b>Observer</b> pattern is shown in this, because you asked your parent to tell you when something that you care about (dinner)
+          has changed its state (it's ready to be eaten).
+          </p>
+        </div>
+      </div>
+      <div class="row row-last">
+        <div class="col-md-12">
+        <div class="header">
+          <h3>Code Sample</h3>
+        </div>
+        <p>
+          <pre>
+            <code class="language-java">
+public class MealCooker {
+  private List<Observer> observers = new ArrayList<Observer>();
+  
+  public void addObserver(Observer observer) {
+    observers.add(observer);
+  }
+  
+  public void cookMeal() {
+    prepareIngredients();
+    cookMeal();
+    allowToCool();
+    
+    for (Observer observer : observers) {
+      observer.notifyMealReady();
+    }
+  }
+}
+
+public interface Observer {
+  public void notifyMealReady();
+}
+
+public class Child implements Observer {
+  private MealCooker parent;
+  
+  public void setMealCooker(MealCooker inCooker) {
+    parent = inCooker;
+  }
+  
+  public void whenHungry() {
+    parent.addObserver(this);
+  }
+  
+  public void notifyMealReady() {
+    washUp();
+    comeToTable();
+  }
+}
+            </code>
+          </pre>
+        </p>
+        <div class="header">
+          <h3>Explanation</h3>
+        </div>
+        <p>
+          The <code>MealCooker</code> object keeps track of a list of <code>Observer</code> objects.  When it is done performing
+          its long <code>cookMeal</code> function, it spins through each <code>Observer</code> object and notifies it.
+        </p>
+      </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted">Design Patterns.  Henry Armstrong - 2015</p>
+      </div>
+    </footer>
+  </body>
+</html>
