@@ -55,3 +55,7 @@ pre[class*=language-]>code[data-language] {
   max-height: inherit;
   overflow: auto;
 }
+
+.patterns li {
+  color: #ccc;
+}
