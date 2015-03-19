@@ -1,12 +1,13 @@
 <html lang="en">
   <head>
+    <meta charset="utf-8">
     <title>Design Patterns | The Observer Pattern</title>
     <link href='http://fonts.googleapis.com/css?family=Merriweather:300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.css">
-    <link rel="stylesheet" type="text/css" href="../style/style.css">    
+    <link rel="stylesheet" type="text/css" href="../style/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js"></script>
@@ -40,7 +41,7 @@
         <div class="col-md-12">
           <div class="header">
             <h3>Explained as to a 5 year old.</h3>
-          </div>        
+          </div>
           <p>It is close to dinner time, and you're hungry.  Mommy or Daddy is cooking dinner.  You want to make sure that you
           know dinner is ready as soon as it's ready.  Would you walk into the kitchen every 5 minutes and ask Mommy/Daddy if dinner
           is ready?  Or, would you ask Mommy/Daddy to let you know when dinner's ready?  That way, you can do other things, like playing
@@ -57,21 +58,18 @@
         <div class="header">
           <h3>Code Sample</h3>
         </div>
-        <p>
-          <pre>
-            <code class="language-java">
-public class MealCooker {
+        <h4>Java</h4>
+        <pre><code class="language-java">public class MealCooker {
   private List&lt;Observer&gt; observers = new ArrayList&lt;Observer&gt;();
-  
+
   public void addObserver(Observer observer) {
     observers.add(observer);
   }
-  
+
   public void cookMeal() {
-    prepareIngredients();
-    cookMeal();
-    allowToCool();
-    
+    // prepareIngredients();
+    // allowToCool();
+
     for (Observer observer : observers) {
       observer.notifyMealReady();
     }
@@ -84,22 +82,82 @@ public interface Observer {
 
 public class Child implements Observer {
   private MealCooker parent;
-  
+
   public void setMealCooker(MealCooker inCooker) {
     parent = inCooker;
   }
-  
+
   public void whenHungry() {
     parent.addObserver(this);
   }
-  
+
   public void notifyMealReady() {
-    washUp();
-    comeToTable();
+    // washUp();
+    // comeToTable();
+    // eat()
+  }
+}</code></pre>
+        <h4>Javascript (ES6)</h4>
+        <pre><code class="language-javascript">let hungryChildren = []
+
+class Parent {
+  constructor(name) {
+    this.name = name
+  }
+
+  cookMeal() {
+    // prepareIngredients()
+    // allowToCool()
+    console.log(`${this.name} cooked a meal!`)
+    hungryChildren.forEach((kid) => kid.notifyMealReady())
+    hungryChildren = []
   }
 }
-            </code>
-          </pre>
+
+class Child {
+  constructor(name) {
+    this.name = name
+  }
+
+  isHungry() {
+    hungryChildren.push(this)
+    console.log(`${this.name} is hungry!`)
+  }
+
+  notifyMealReady() {
+    // washUp()
+    // comeToTable()
+    // eat()
+    console.log(`${this.name} has been fed!`)
+  }
+}
+
+let mommy = new Parent('Mommy')
+let daddy = new Parent('Daddy')
+
+let joey = new Child('Joey')
+let jimmy = new Child('Jimmy')
+let johnny = new Child('Johnny')
+
+joey.isHungry()
+// Joey is hungry!
+
+johnny.isHungry()
+// Johnny is hungry!
+
+daddy.cookMeal()
+// Daddy cooked a meal!
+// Joey has been fed!
+// Johnny has been fed!
+
+jimmy.isHungry()
+// Jimmy is hungry!
+
+mommy.cookMeal()
+// Mommy cooked a meal!
+// Jimmy has been fed!</code></pre>
+        <p>
+          <a href="//jsbin.com/hagicuquru/1/edit?js,console">View this example on JS Bin</a>
         </p>
         <div class="header">
           <h3>Explanation</h3>
