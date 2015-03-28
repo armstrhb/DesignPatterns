@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Behavorial on Design Patterns, explained simply</title>
+    <link>http://localhost:1313/categories/behavorial/</link>
+    <description>Recent content in Behavorial on Design Patterns, explained simply</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 22 Mar 2015 16:00:55 -0400</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/behavorial/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>State</title>
+      <link>http://localhost:1313/patterns/behavioral/state/</link>
+      <pubDate>Sun, 22 Mar 2015 16:00:55 -0400</pubDate>
+      
+      <guid>http://localhost:1313/patterns/behavioral/state/</guid>
+      <description>
+
+&lt;p&gt;How can you make the same behavior do different things to an object?&lt;/p&gt;
+
+&lt;h3 id=&#34;explained-as-to-a-5-year-old:0681be2a286ee8aab9e9e03ff9e5eb18&#34;&gt;Explained as to a 5 year old&lt;/h3&gt;
+
+&lt;p&gt;One morning, you wake up in your bed. You look at the window, and the sun is
+up, but you are still tired.  So, you decide to roll back
+over, snuggle up with your blanket, and go back to sleep.  A while later, you
+wake up again, and this time you feel nice and rested. Now that you&amp;rsquo;re no longer
+sleepy, you decide to get up out of bed to begin your day.&lt;/p&gt;
+
+&lt;p&gt;The &lt;strong&gt;state&lt;/strong&gt; pattern can be seen here.  Think of your restfulness as defined
+by two states: &lt;em&gt;rested&lt;/em&gt; and &lt;em&gt;not rested&lt;/em&gt;.  When you were woken the first time,
+your internal state was &lt;em&gt;not rested&lt;/em&gt;, so when you woke the first time, the
+appropriate behavior was to go back to sleep.  While you were sleeping, your
+internal state changed to &lt;em&gt;rested&lt;/em&gt;, and when you awoke next, you got up out of
+bed.&lt;/p&gt;
+
+&lt;p&gt;Your behavior changed based on your internal state. An outside event, like
+maybe a bird singing by your window, or your brother playing in the next room,
+woke you.  And whether you got out of bed or not depended on how rested you
+were.&lt;/p&gt;
+
+&lt;h3 id=&#34;code-sample:0681be2a286ee8aab9e9e03ff9e5eb18&#34;&gt;Code Sample&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Coming soon.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;explanation:0681be2a286ee8aab9e9e03ff9e5eb18&#34;&gt;Explanation&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Coming soon.&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Strategy</title>
+      <link>http://localhost:1313/patterns/behavioral/strategy/</link>
+      <pubDate>Thu, 19 Mar 2015 23:24:38 -0400</pubDate>
+      
+      <guid>http://localhost:1313/patterns/behavioral/strategy/</guid>
+      <description>
+
+&lt;p&gt;One problem.  Many different ways to solve it. How do we account for them all?&lt;/p&gt;
+
+&lt;h3 id=&#34;explained-as-to-a-5-year-old:010736ab8fdfc1cfa693a6e5a7960263&#34;&gt;Explained as to a 5 year old&lt;/h3&gt;
+
+&lt;p&gt;Let&amp;rsquo;s say you have a new race car track playset. The tracks come in little
+pieces that you, or a best friend, or mommy or daddy, can put together in
+many different ways. Let&amp;rsquo;s say this is a really cool play set, and includes
+a big red button that rockets the race car onto the track. The whole thing
+works great, as long as you connect the track to the big red button.&lt;/p&gt;
+
+&lt;p&gt;You like big red buttons, so daddy makes three or four different race tracks.
+You can then choose which one you want to race on next, and daddy plugs it in
+to the big red button. All you have to do is press the button, and watch the
+race cars zoom along the race track.&lt;/p&gt;
+
+&lt;p&gt;The &lt;strong&gt;Strategy Pattern&lt;/strong&gt; can be seen here. An algorithm is declared (race cars
+can be shot down a race track by pressing a big red button). The type of
+track, the color of the cars, etc, can vary from track to track. Each works
+though, as long as it connects to the big red button that fires them off.&lt;/p&gt;
+
+&lt;h3 id=&#34;code-sample:010736ab8fdfc1cfa693a6e5a7960263&#34;&gt;Code Sample&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Coming soon.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;explanation:010736ab8fdfc1cfa693a6e5a7960263&#34;&gt;Explanation&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Coming soon.&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Observer</title>
+      <link>http://localhost:1313/patterns/behavioral/observer/</link>
+      <pubDate>Thu, 19 Mar 2015 22:47:14 -0400</pubDate>
+      
+      <guid>http://localhost:1313/patterns/behavioral/observer/</guid>
+      <description>
+
+&lt;p&gt;Why poll when you can be notified?&lt;/p&gt;
+
+&lt;h3 id=&#34;explained-as-to-a-5-year-old:176314bb5b9f372fe3d37195de41f249&#34;&gt;Explained as to a 5 year old.&lt;/h3&gt;
+
+&lt;p&gt;It is close to dinner time, and you&amp;rsquo;re hungry. Mommy or Daddy is cooking
+dinner. You want to make sure that you know dinner is ready as soon as it&amp;rsquo;s
+ready. Would you walk into the kitchen every 5 minutes and ask Mommy/Daddy if
+dinner is ready? Or, would you ask Mommy/Daddy to let you know when dinner&amp;rsquo;s
+ready? That way, you can do other things, like playing or watching a cartoon.
+When dinner is ready, you&amp;rsquo;ll be told so, and until then, you don&amp;rsquo;t have to
+think about it, except when you&amp;rsquo;re tummy reminds you.&lt;/p&gt;
+
+&lt;p&gt;The &lt;strong&gt;Observer&lt;/strong&gt; pattern is shown in this, because you asked your parent to tell
+you when something that you care about (dinner) has changed its state (it&amp;rsquo;s
+ready to be eaten).&lt;/p&gt;
+
+&lt;h3 id=&#34;code-sample:176314bb5b9f372fe3d37195de41f249&#34;&gt;Code Sample&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Coming soon.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;explanation:176314bb5b9f372fe3d37195de41f249&#34;&gt;Explanation&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Coming soon.&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Iterator</title>
+      <link>http://localhost:1313/patterns/behavioral/iterator/</link>
+      <pubDate>Thu, 19 Mar 2015 22:31:21 -0400</pubDate>
+      
+      <guid>http://localhost:1313/patterns/behavioral/iterator/</guid>
+      <description>
+
+&lt;p&gt;What&amp;rsquo;s the easiest (or laziest) way to traverse through a list?&lt;/p&gt;
+
+&lt;h3 id=&#34;explained-as-to-a-5-year-old:f35e99ba19d9adb695744835c3395c7f&#34;&gt;Explained as to a 5 year old&lt;/h3&gt;
+
+&lt;p&gt;At bath time, mommy or daddy draws the batch for you.  And when they say it&amp;rsquo;s
+ready, you jump in,and have a great time trying to get as much bath water out
+of the tub as possible.&lt;/p&gt;
+
+&lt;p&gt;Have you ever tried to draw a bath by yourself, though?  They&amp;rsquo;re more to it than
+just flipping the water on.  You have to keep the drain open, testing the water
+until the temperature is just right, adjusting the knob when needed.  Once the
+temperature is where you&amp;rsquo;d be comfortable, it&amp;rsquo;s time to plug the drain, pour in
+the bubble bath, and watch the water level until it&amp;rsquo;s high enough (but not too
+high).  Then you turn the water off, and you&amp;rsquo;re done!&lt;/p&gt;
+
+&lt;p&gt;But you don&amp;rsquo;t have to worry about all that.  Mommy or Daddy does this for you.&lt;br /&gt;
+In this, your parent is acting as a &lt;strong&gt;facade&lt;/strong&gt;, and performing a complex series
+of steps or operations for you.  All you have to do, is tell Mommy or Daddy
+that you&amp;rsquo;re ready for a bath.  They do all the work of getting the bath ready.&lt;/p&gt;
+
+&lt;h3 id=&#34;code-sample:f35e99ba19d9adb695744835c3395c7f&#34;&gt;Code Sample&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Coming soon.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;explanation:f35e99ba19d9adb695744835c3395c7f&#34;&gt;Explanation&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Coming soon.&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

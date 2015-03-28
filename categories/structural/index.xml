@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Structural on Design Patterns, explained simply</title>
+    <link>http://localhost:1313/categories/structural/</link>
+    <description>Recent content in Structural on Design Patterns, explained simply</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 19 Mar 2015 23:22:18 -0400</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/structural/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Facade</title>
+      <link>http://localhost:1313/patterns/structural/facade/</link>
+      <pubDate>Thu, 19 Mar 2015 23:22:18 -0400</pubDate>
+      
+      <guid>http://localhost:1313/patterns/structural/facade/</guid>
+      <description>
+
+&lt;p&gt;Not everything&amp;rsquo;s simple. But what if I let something else handle the complexity
+for me?&lt;/p&gt;
+
+&lt;h3 id=&#34;explained-as-to-a-5-year-old:184257c8e3a9137497a20d49b4964047&#34;&gt;Explained as to a 5 year old.&lt;/h3&gt;
+
+&lt;p&gt;At bath time, mommy or daddy draws the batch for you. And when they say it&amp;rsquo;s
+ready, you jump in, and have a great time trying to get as much bath water out
+of the tub as possible.&lt;/p&gt;
+
+&lt;p&gt;Have you ever tried to draw a bath by yourself, though? They&amp;rsquo;re more to it
+than just flipping the water on. You have to keep the drain open, testing
+the water until the temperature is just right, adjusting the knob when needed.
+Once the temperature is where you&amp;rsquo;d be comfortable, it&amp;rsquo;s time to plug the
+drain, pour in the bubble bath, and watch the water level until it&amp;rsquo;s high
+enough (but not too high). Then you turn the water off, and you&amp;rsquo;re done!&lt;/p&gt;
+
+&lt;p&gt;But you don&amp;rsquo;t have to worry about all that. Mommy or Daddy does this for you.
+In this, your parent is acting as a &lt;strong&gt;facade&lt;/strong&gt;, and performing a complex series
+of steps or operations for you. All you have to do, is tell Mommy or Daddy
+that you&amp;rsquo;re ready for a bath. They do all the work of getting the bath ready.&lt;/p&gt;
+
+&lt;h3 id=&#34;code-sample:184257c8e3a9137497a20d49b4964047&#34;&gt;Code Sample&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Coming soon.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;explanation:184257c8e3a9137497a20d49b4964047&#34;&gt;Explanation&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Coming soon.&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

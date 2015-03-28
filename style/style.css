@@ -56,6 +56,26 @@ pre[class*=language-]>code[data-language] {
   overflow: auto;
 }
 
-.patterns li {
+ul.pattern-list {
+  list-style-type: none;
+  padding-left: 10px;
+}
+
+ul.pattern-list li {
   color: #ccc;
+}
+
+#tags:before {
+  content: "Categories:";
+  color: #ccc;
+}
+
+#tags {
+  margin-bottom: 0px;
+}
+
+#tags li {
+  list-style-type: none;
+  padding-left: 10px;
+  display: inline;
 }

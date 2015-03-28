@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-US">
+  <head>
+    <meta charset="utf-8">
+
+    
+
+    <base href="http://localhost:1313/">
+    <title>The Thread Pool Pattern | Design Patterns, explained simply</title>
+    <link rel="canonical" href="http://localhost:1313/patterns/concurrency/threadpool/">
+
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:300' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="style/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+  </head>
+  <body lang="en">
+    <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Design Patterns</a>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="/about">About</a></li>
+        <li><a href="/map">Site Map</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="container">
+      <div class="page-header">
+        <h1>The Thread Pool Pattern</h1>
+        <ul id="tags">
+          
+            <li><a href="categories/concurrency">Concurrency</a></li>
+          
+        </ul>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          
+
+<p>Sometimes I really don&rsquo;t want to do something twice, especially when it&rsquo;s
+expensive to set up. What if I held onto it, after I used it?</p>
+
+<h3 id="explained-as-to-a-5-year-old:6800be17c4c05166f264388caeb21f7b">Explained as to a 5 year old</h3>
+
+<p>Your teacher takes out ten pairs of scissors from the supply closet at the
+beginning of arts and crafts time. When any of the children need to use
+scissors, they ask the teacher, and the teacher will give them a pair, if
+one&rsquo;s available. If all ten pairs of scissors are being used, the teacher
+will go to the supply closet and get more. When a child is done with the
+scissors, they are given back to the teacher to hold on to for the next child
+who needs it.</p>
+
+<p>This is the <strong>Thread Pool</strong> pattern. Expensive object creation (going into
+the closet to get scissors) is managed by reusing created objects (holding
+on to a few pairs at once). A manager object creates a repository, or
+pool, for a set number of objects to stay, available for use when something
+requests it. Once the requester has used the object, it is &lsquo;released&rsquo; back to
+the pool manager. The pool can grow or shrink, based on the demand of the
+pool&rsquo;s objects.</p>
+
+<h3 id="code-sample:6800be17c4c05166f264388caeb21f7b">Code Sample</h3>
+
+<p><em>Coming soon.</em></p>
+
+<h3 id="explanation:6800be17c4c05166f264388caeb21f7b">Explanation</h3>
+
+<p><em>Coming soon.</em></p>
+
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+  <div class="container">
+    <p class="text-muted">Design Patterns.  Henry Armstrong - 2015</p>
+  </div>
+</footer>
+
+  <script>document.write('<script src="http://'
+        + (location.host || 'localhost').split(':')[0]
+		+ ':1313/livereload.js?mindelay=10"></'
+        + 'script>')</script></body>
+</html>

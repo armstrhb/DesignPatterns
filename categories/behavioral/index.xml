@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Behavioral on Design Patterns, explained simply</title>
+    <link>http://localhost:1313/categories/behavioral/</link>
+    <description>Recent content in Behavioral on Design Patterns, explained simply</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 19 Mar 2015 23:24:38 -0400</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/behavioral/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Strategy</title>
+      <link>http://localhost:1313/patterns/behavioral/strategy/</link>
+      <pubDate>Thu, 19 Mar 2015 23:24:38 -0400</pubDate>
+      
+      <guid>http://localhost:1313/patterns/behavioral/strategy/</guid>
+      <description>
+
+&lt;h3 id=&#34;explained-as-to-a-5-year-old:010736ab8fdfc1cfa693a6e5a7960263&#34;&gt;Explained as to a 5 year old&lt;/h3&gt;
+
+&lt;p&gt;Let&amp;rsquo;s say you have a new race car track playset. The tracks come in little
+pieces that you, or a best friend, or mommy or daddy, can put together in
+many different ways. Let&amp;rsquo;s say this is a really cool play set, and includes
+a big red button that rockets the race car onto the track. The whole thing
+works great, as long as you connect the track to the big red button.&lt;/p&gt;
+
+&lt;p&gt;You like big red buttons, so daddy makes three or four different race tracks.
+You can then choose which one you want to race on next, and daddy plugs it in
+to the big red button. All you have to do is press the button, and watch the
+race cars zoom along the race track.&lt;/p&gt;
+
+&lt;p&gt;The &lt;strong&gt;Strategy Pattern&lt;/strong&gt; can be seen here. An algorithm is declared (race cars
+can be shot down a race track by pressing a big red button). The type of
+track, the color of the cars, etc, can vary from track to track. Each works
+though, as long as it connects to the big red button that fires them off.&lt;/p&gt;
+
+&lt;h3 id=&#34;code-sample:010736ab8fdfc1cfa693a6e5a7960263&#34;&gt;Code Sample&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Coming soon.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;explanation:010736ab8fdfc1cfa693a6e5a7960263&#34;&gt;Explanation&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Coming soon.&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
