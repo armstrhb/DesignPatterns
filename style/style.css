@@ -72,6 +72,7 @@ ul.pattern-list li {
 
 #tags {
   margin-bottom: 0px;
+  display: inline;
 }
 
 #tags li {
