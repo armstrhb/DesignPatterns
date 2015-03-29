@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Creational on Design Patterns, explained simply</title>
+    <link>http://armstrhb.github.io/DesignPatterns/categories/creational/</link>
+    <description>Recent content in Creational on Design Patterns, explained simply</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 29 Mar 2015 14:33:00 -0400</lastBuildDate>
+    <atom:link href="http://armstrhb.github.io/DesignPatterns/categories/creational/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Builder</title>
+      <link>http://armstrhb.github.io/DesignPatterns/patterns/creational/builder/</link>
+      <pubDate>Sun, 29 Mar 2015 14:33:00 -0400</pubDate>
+      
+      <guid>http://armstrhb.github.io/DesignPatterns/patterns/creational/builder/</guid>
+      <description>
+
+&lt;p&gt;&lt;em&gt;Description here&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;explained-as-to-a-5-year-old:8fd4bc5e57a8b030c7141267f15a6e67&#34;&gt;Explained as to a 5 year old&lt;/h3&gt;
+
+&lt;p&gt;You&amp;rsquo;re great at drawing pictures. A friend lets you know that they would like
+to have a picture of a dinosaur.  So, you sit down at a table with some paper
+and crayons, and draw a picture of a dinosaur.  Very nice!&lt;/p&gt;
+
+&lt;p&gt;A few moments later, another friend asks for a picture of of a firetruck.
+Again, you sit down and whip up a picture of a firetruck.&lt;/p&gt;
+
+&lt;p&gt;You&amp;rsquo;re acting out the &lt;strong&gt;builder&lt;/strong&gt; pattern.  Think of the pictures as objects.
+You, as the builder, receive some sort of input (like a friend saying they want
+  some type of picture).  You take care of the creation of the object (gathering
+the required drawing materials, paper, drawing the picture, etc.) and return it
+to the requester.&lt;/p&gt;
+
+&lt;h3 id=&#34;code-sample:8fd4bc5e57a8b030c7141267f15a6e67&#34;&gt;Code Sample&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Coming soon.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;explanation:8fd4bc5e57a8b030c7141267f15a6e67&#34;&gt;Explanation&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Coming soon.&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
