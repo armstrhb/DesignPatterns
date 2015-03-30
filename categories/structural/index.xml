@@ -40,7 +40,46 @@ that you&amp;rsquo;re ready for a bath. They do all the work of getting the bath
 
 &lt;h3 id=&#34;code-sample:184257c8e3a9137497a20d49b4964047&#34;&gt;Code Sample&lt;/h3&gt;
 
-&lt;p&gt;&lt;em&gt;Coming soon.&lt;/em&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;java&#34;&gt;
+public interface BathTub {
+  public void turnOn();
+  public void turnOff();
+  public void plugDrain();
+  public void unplugDrain();
+  public void adjustTemperature(int increment);
+  public void addSubstanceToBathWater(Substance solution);
+  public int getWaterLevel();
+  public int getWaterTemperature();
+}
+
+public class Parent implements Person {
+  public getPreferredBatchTemperature() {
+    return 100;
+  }
+
+  public getPreferredBathWaterLevel() {
+    return 18;
+  }
+
+  public void drawBath(BathTub bath) {
+    bath.unplugDrain();
+    bath.turnOn();
+    bath.adjustTemperature(getPreferredBatchTemperature());
+
+    while (bath.getWaterTemperature() &lt; getPreferredBatchTemperature()) {
+      wait(30); // just wait 30 seconds
+    }
+
+    bath.plugDrain();
+
+    while (bath.getWaterLevel() &lt; getPreferredBathWaterLevel()) {
+      wait(5); // just wait 5 seconds
+    }
+
+    turnOff();
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h3 id=&#34;explanation:184257c8e3a9137497a20d49b4964047&#34;&gt;Explanation&lt;/h3&gt;
 

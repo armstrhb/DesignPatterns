@@ -6,6 +6,7 @@ html {
 
 body {
   font-family: 'Ubuntu', sans-serif;
+  line-height: 1.8em;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -49,6 +50,10 @@ code, pre {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+pre {
+  padding: 0px;
 }
 
 pre[class*=language-]>code[data-language] {
