@@ -1,20 +1,26 @@
 html {
   position: relative;
   min-height: 100%;
-  font-family: 'Ubuntu', sans-serif;
 }
 
 body {
-  font-family: 'Ubuntu', sans-serif;
-  line-height: 1.8em;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.7em;
+  line-height: 1.6em;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Merriweather', serif;
+  /*font-family: 'Merriweather', serif;*/
+  font-weight: bold;
+}
+
+a {
+  color: #4078c0;
 }
 
 code, pre {
   font-family: 'Ubuntu Mono', 'Consolas';
+  font-size: 0.9em;
 }
 
 .page-header {

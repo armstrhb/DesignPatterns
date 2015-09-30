@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Design Patterns, explained simply</title>
-    <link>http://armstrhb.github.io/DesignPatterns/</link>
+    <link>http://localhost:1313/DesignPatterns/</link>
     <description>Recent content on Design Patterns, explained simply</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 29 Mar 2015 14:33:00 -0400</lastBuildDate>
-    <atom:link href="http://armstrhb.github.io/DesignPatterns/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/DesignPatterns/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Builder</title>
-      <link>http://armstrhb.github.io/DesignPatterns/patterns/creational/builder/</link>
+      <link>http://localhost:1313/DesignPatterns/patterns/creational/builder/</link>
       <pubDate>Sun, 29 Mar 2015 14:33:00 -0400</pubDate>
       
-      <guid>http://armstrhb.github.io/DesignPatterns/patterns/creational/builder/</guid>
+      <guid>http://localhost:1313/DesignPatterns/patterns/creational/builder/</guid>
       <description>
 
 &lt;p&gt;Sometimes object creation isn&amp;rsquo;t simple. Why not let something do it for you?&lt;/p&gt;
@@ -46,10 +46,10 @@ to the requester.&lt;/p&gt;
     
     <item>
       <title>Pattern Index</title>
-      <link>http://armstrhb.github.io/DesignPatterns/patterns/</link>
+      <link>http://localhost:1313/DesignPatterns/patterns/</link>
       <pubDate>Fri, 27 Mar 2015 23:34:07 -0400</pubDate>
       
-      <guid>http://armstrhb.github.io/DesignPatterns/patterns/</guid>
+      <guid>http://localhost:1313/DesignPatterns/patterns/</guid>
       <description>&lt;p&gt;Here&amp;rsquo;s the progress I&amp;rsquo;ve made so far.  The design patterns are split out
 by their classic categories.  Check back often for updates.&lt;/p&gt;
 </description>
@@ -57,10 +57,10 @@ by their classic categories.  Check back often for updates.&lt;/p&gt;
     
     <item>
       <title>State</title>
-      <link>http://armstrhb.github.io/DesignPatterns/patterns/behavioral/state/</link>
+      <link>http://localhost:1313/DesignPatterns/patterns/behavioral/state/</link>
       <pubDate>Sun, 22 Mar 2015 16:00:55 -0400</pubDate>
       
-      <guid>http://armstrhb.github.io/DesignPatterns/patterns/behavioral/state/</guid>
+      <guid>http://localhost:1313/DesignPatterns/patterns/behavioral/state/</guid>
       <description>
 
 &lt;p&gt;How can you make the same behavior do different things to an object?&lt;/p&gt;
@@ -97,10 +97,10 @@ were.&lt;/p&gt;
     
     <item>
       <title>Thread Pool</title>
-      <link>http://armstrhb.github.io/DesignPatterns/patterns/concurrency/threadpool/</link>
+      <link>http://localhost:1313/DesignPatterns/patterns/concurrency/threadpool/</link>
       <pubDate>Thu, 19 Mar 2015 23:24:49 -0400</pubDate>
       
-      <guid>http://armstrhb.github.io/DesignPatterns/patterns/concurrency/threadpool/</guid>
+      <guid>http://localhost:1313/DesignPatterns/patterns/concurrency/threadpool/</guid>
       <description>
 
 &lt;p&gt;Sometimes I really don&amp;rsquo;t want to do something twice, especially when it&amp;rsquo;s
@@ -136,10 +136,10 @@ pool&amp;rsquo;s objects.&lt;/p&gt;
     
     <item>
       <title>Strategy</title>
-      <link>http://armstrhb.github.io/DesignPatterns/patterns/behavioral/strategy/</link>
+      <link>http://localhost:1313/DesignPatterns/patterns/behavioral/strategy/</link>
       <pubDate>Thu, 19 Mar 2015 23:24:38 -0400</pubDate>
       
-      <guid>http://armstrhb.github.io/DesignPatterns/patterns/behavioral/strategy/</guid>
+      <guid>http://localhost:1313/DesignPatterns/patterns/behavioral/strategy/</guid>
       <description>
 
 &lt;p&gt;One problem.  Many different ways to solve it. How do we account for them all?&lt;/p&gt;
@@ -174,10 +174,10 @@ though, as long as it connects to the big red button that fires them off.&lt;/p&
     
     <item>
       <title>Facade</title>
-      <link>http://armstrhb.github.io/DesignPatterns/patterns/structural/facade/</link>
+      <link>http://localhost:1313/DesignPatterns/patterns/structural/facade/</link>
       <pubDate>Thu, 19 Mar 2015 23:22:18 -0400</pubDate>
       
-      <guid>http://armstrhb.github.io/DesignPatterns/patterns/structural/facade/</guid>
+      <guid>http://localhost:1313/DesignPatterns/patterns/structural/facade/</guid>
       <description>
 
 &lt;p&gt;Not everything&amp;rsquo;s simple. But what if I let something else handle the complexity
@@ -252,10 +252,10 @@ public class Parent implements Person {
     
     <item>
       <title>Observer</title>
-      <link>http://armstrhb.github.io/DesignPatterns/patterns/behavioral/observer/</link>
+      <link>http://localhost:1313/DesignPatterns/patterns/behavioral/observer/</link>
       <pubDate>Thu, 19 Mar 2015 22:47:14 -0400</pubDate>
       
-      <guid>http://armstrhb.github.io/DesignPatterns/patterns/behavioral/observer/</guid>
+      <guid>http://localhost:1313/DesignPatterns/patterns/behavioral/observer/</guid>
       <description>
 
 &lt;p&gt;Why poll when you can be notified?&lt;/p&gt;
@@ -286,31 +286,17 @@ ready to be eaten).&lt;/p&gt;
     
     <item>
       <title>Iterator</title>
-      <link>http://armstrhb.github.io/DesignPatterns/patterns/behavioral/iterator/</link>
+      <link>http://localhost:1313/DesignPatterns/patterns/behavioral/iterator/</link>
       <pubDate>Thu, 19 Mar 2015 22:31:21 -0400</pubDate>
       
-      <guid>http://armstrhb.github.io/DesignPatterns/patterns/behavioral/iterator/</guid>
+      <guid>http://localhost:1313/DesignPatterns/patterns/behavioral/iterator/</guid>
       <description>
 
 &lt;p&gt;What&amp;rsquo;s the easiest (or laziest) way to traverse through a list?&lt;/p&gt;
 
 &lt;h3 id=&#34;explained-as-to-a-5-year-old:f35e99ba19d9adb695744835c3395c7f&#34;&gt;Explained as to a 5 year old&lt;/h3&gt;
 
-&lt;p&gt;At bath time, mommy or daddy draws the batch for you.  And when they say it&amp;rsquo;s
-ready, you jump in,and have a great time trying to get as much bath water out
-of the tub as possible.&lt;/p&gt;
-
-&lt;p&gt;Have you ever tried to draw a bath by yourself, though?  They&amp;rsquo;re more to it than
-just flipping the water on.  You have to keep the drain open, testing the water
-until the temperature is just right, adjusting the knob when needed.  Once the
-temperature is where you&amp;rsquo;d be comfortable, it&amp;rsquo;s time to plug the drain, pour in
-the bubble bath, and watch the water level until it&amp;rsquo;s high enough (but not too
-high).  Then you turn the water off, and you&amp;rsquo;re done!&lt;/p&gt;
-
-&lt;p&gt;But you don&amp;rsquo;t have to worry about all that.  Mommy or Daddy does this for you.&lt;br /&gt;
-In this, your parent is acting as a &lt;strong&gt;facade&lt;/strong&gt;, and performing a complex series
-of steps or operations for you.  All you have to do, is tell Mommy or Daddy
-that you&amp;rsquo;re ready for a bath.  They do all the work of getting the bath ready.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Coming soon.&lt;/em&gt;&lt;/p&gt;
 
 &lt;h3 id=&#34;code-sample:f35e99ba19d9adb695744835c3395c7f&#34;&gt;Code Sample&lt;/h3&gt;
 
@@ -324,20 +310,21 @@ that you&amp;rsquo;re ready for a bath.  They do all the work of getting the bat
     
     <item>
       <title>About</title>
-      <link>http://armstrhb.github.io/DesignPatterns/about/</link>
+      <link>http://localhost:1313/DesignPatterns/about/</link>
       <pubDate>Thu, 19 Mar 2015 21:15:07 -0400</pubDate>
       
-      <guid>http://armstrhb.github.io/DesignPatterns/about/</guid>
+      <guid>http://localhost:1313/DesignPatterns/about/</guid>
       <description>
 
 &lt;h3 id=&#34;design-patterns-an-exercise-in-futility-i-mean-gaining-knowledge:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Design Patterns, an exercise in futility.. I mean gaining knowledge&lt;/h3&gt;
 
-&lt;p&gt;Design Patterns, explained simply, was started by Henry Armstrong (that&amp;rsquo;s me)
+&lt;p&gt;Design Patterns, explained simply, was started by
+&lt;a href=&#34;https://github.com/armstrhb&#34;&gt;Henry Armstrong&lt;/a&gt; (that&amp;rsquo;s me)
 in March of 2015.&lt;/p&gt;
 
 &lt;p&gt;As an application support analyst at a major health
 insurance company in the US, I began to ache for a better understanding of
-better ways to accomplish common problems and tasks I encoutered when creating
+better ways to accomplish common problems and tasks I encountered when creating
 internal utilities for my teams.  I was aware of software design patterns,
 and the various resources online for them.  I was also aware that I was slowly
 becoming dependent on google for an ever increasing amount of code-related
@@ -348,6 +335,16 @@ patterns.  If I could understand these to a point that I could explain them
 to my five year old son (or even better my three year old youngest!), then I&amp;rsquo;d
 have an understanding that would stay with me, and make my resources less
 internet-based.&lt;/p&gt;
+
+&lt;h3 id=&#34;sources-and-inspiration:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Sources and Inspiration&lt;/h3&gt;
+
+&lt;p&gt;I&amp;rsquo;ve used several sources throughout my learnings of the popular design
+patterns that exist out on the internet.  Here are the ones I think most
+fondly of.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://sourcemaking.com/design_patterns/adapter&#34;&gt;SourceMaking&lt;/a&gt; - a great
+website that plainly illustrates several design patterns, anti-patterns, and
+even some refactoring tips.  Great site.&lt;/p&gt;
 </description>
     </item>
     

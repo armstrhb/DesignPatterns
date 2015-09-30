@@ -5,15 +5,16 @@
 
     
 
-    <base href="http://armstrhb.github.io/DesignPatterns">
+    <base href="http://localhost:1313/DesignPatterns">
     <title>Pattern Index | Design Patterns, explained simply</title>
-    <link rel="canonical" href="http://armstrhb.github.io/DesignPatterns/patterns/">
+    <link rel="canonical" href="http://localhost:1313/DesignPatterns/patterns/">
 
     <link href='http://fonts.googleapis.com/css?family=Merriweather:300' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="http://armstrhb.github.io/DesignPatterns/style/style.css">
+<link rel="stylesheet" type="text/css" href="http://localhost:1313/DesignPatterns/style/style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_light.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
@@ -31,13 +32,13 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="http://armstrhb.github.io/DesignPatterns">Design Patterns</a>
+      <a class="navbar-brand" href="http://localhost:1313/DesignPatterns">Design Patterns</a>
     </div>
     <div class="collapse navbar-collapse" id="navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href="http://armstrhb.github.io/DesignPatterns/patterns">Patterns</a></li>
-        <li><a href="http://armstrhb.github.io/DesignPatterns/about">About</a></li>
-        <li><a href="http://armstrhb.github.io/DesignPatterns/map">Site Map</a></li>
+        <li><a href="http://localhost:1313/DesignPatterns/patterns">Patterns</a></li>
+        <li><a href="http://localhost:1313/DesignPatterns/about">About</a></li>
+        <li><a href="http://localhost:1313/DesignPatterns/map">Site Map</a></li>
       </ul>
     </div>
   </div>
@@ -61,13 +62,13 @@ by their classic categories.  Check back often for updates.</p>
               <h3>behavorial</h3>
               <ul class="pattern-list">
                 
-                  <li hugo-nav="/patterns/behavioral/state"><a href="http://armstrhb.github.io/DesignPatterns/patterns/behavioral/state/">State</a></li>
+                  <li hugo-nav="/patterns/behavioral/state"><a href="http://localhost:1313/DesignPatterns/patterns/behavioral/state/">State</a></li>
                 
-                  <li hugo-nav="/patterns/behavioral/strategy"><a href="http://armstrhb.github.io/DesignPatterns/patterns/behavioral/strategy/">Strategy</a></li>
+                  <li hugo-nav="/patterns/behavioral/strategy"><a href="http://localhost:1313/DesignPatterns/patterns/behavioral/strategy/">Strategy</a></li>
                 
-                  <li hugo-nav="/patterns/behavioral/observer"><a href="http://armstrhb.github.io/DesignPatterns/patterns/behavioral/observer/">Observer</a></li>
+                  <li hugo-nav="/patterns/behavioral/observer"><a href="http://localhost:1313/DesignPatterns/patterns/behavioral/observer/">Observer</a></li>
                 
-                  <li hugo-nav="/patterns/behavioral/iterator"><a href="http://armstrhb.github.io/DesignPatterns/patterns/behavioral/iterator/">Iterator</a></li>
+                  <li hugo-nav="/patterns/behavioral/iterator"><a href="http://localhost:1313/DesignPatterns/patterns/behavioral/iterator/">Iterator</a></li>
                 
               </ul>
             </div>
@@ -76,7 +77,7 @@ by their classic categories.  Check back often for updates.</p>
               <h3>concurrency</h3>
               <ul class="pattern-list">
                 
-                  <li hugo-nav="/patterns/concurrency/threadpool"><a href="http://armstrhb.github.io/DesignPatterns/patterns/concurrency/threadpool/">Thread Pool</a></li>
+                  <li hugo-nav="/patterns/concurrency/threadpool"><a href="http://localhost:1313/DesignPatterns/patterns/concurrency/threadpool/">Thread Pool</a></li>
                 
               </ul>
             </div>
@@ -85,7 +86,7 @@ by their classic categories.  Check back often for updates.</p>
               <h3>creational</h3>
               <ul class="pattern-list">
                 
-                  <li hugo-nav="/patterns/creational/builder"><a href="http://armstrhb.github.io/DesignPatterns/patterns/creational/builder/">Builder</a></li>
+                  <li hugo-nav="/patterns/creational/builder"><a href="http://localhost:1313/DesignPatterns/patterns/creational/builder/">Builder</a></li>
                 
               </ul>
             </div>
@@ -94,7 +95,7 @@ by their classic categories.  Check back often for updates.</p>
               <h3>structural</h3>
               <ul class="pattern-list">
                 
-                  <li hugo-nav="/patterns/structural/facade"><a href="http://armstrhb.github.io/DesignPatterns/patterns/structural/facade/">Facade</a></li>
+                  <li hugo-nav="/patterns/structural/facade"><a href="http://localhost:1313/DesignPatterns/patterns/structural/facade/">Facade</a></li>
                 
               </ul>
             </div>
@@ -108,5 +109,8 @@ by their classic categories.  Check back often for updates.</p>
   </div>
 </footer>
 
-  </body>
+  <script>document.write('<script src="http://'
+        + (location.host || 'localhost').split(':')[0]
+		+ ':1313/livereload.js?mindelay=10"></'
+        + 'script>')</script></body>
 </html>

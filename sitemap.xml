@@ -2,53 +2,53 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://armstrhb.github.io/DesignPatterns/</loc>
+    <loc>http://localhost:1313/DesignPatterns/</loc>
     <lastmod>2015-03-29T14:33:00-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://armstrhb.github.io/DesignPatterns/patterns/creational/builder/</loc>
+    <loc>http://localhost:1313/DesignPatterns/patterns/creational/builder/</loc>
     <lastmod>2015-03-29T14:33:00-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://armstrhb.github.io/DesignPatterns/patterns/</loc>
+    <loc>http://localhost:1313/DesignPatterns/patterns/</loc>
     <lastmod>2015-03-27T23:34:07-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://armstrhb.github.io/DesignPatterns/patterns/behavioral/state/</loc>
+    <loc>http://localhost:1313/DesignPatterns/patterns/behavioral/state/</loc>
     <lastmod>2015-03-22T16:00:55-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://armstrhb.github.io/DesignPatterns/patterns/concurrency/threadpool/</loc>
+    <loc>http://localhost:1313/DesignPatterns/patterns/concurrency/threadpool/</loc>
     <lastmod>2015-03-19T23:24:49-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://armstrhb.github.io/DesignPatterns/patterns/behavioral/strategy/</loc>
+    <loc>http://localhost:1313/DesignPatterns/patterns/behavioral/strategy/</loc>
     <lastmod>2015-03-19T23:24:38-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://armstrhb.github.io/DesignPatterns/patterns/structural/facade/</loc>
+    <loc>http://localhost:1313/DesignPatterns/patterns/structural/facade/</loc>
     <lastmod>2015-03-19T23:22:18-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://armstrhb.github.io/DesignPatterns/patterns/behavioral/observer/</loc>
+    <loc>http://localhost:1313/DesignPatterns/patterns/behavioral/observer/</loc>
     <lastmod>2015-03-19T22:47:14-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://armstrhb.github.io/DesignPatterns/patterns/behavioral/iterator/</loc>
+    <loc>http://localhost:1313/DesignPatterns/patterns/behavioral/iterator/</loc>
     <lastmod>2015-03-19T22:31:21-04:00</lastmod>
   </url>
   
   <url>
-    <loc>http://armstrhb.github.io/DesignPatterns/about/</loc>
+    <loc>http://localhost:1313/DesignPatterns/about/</loc>
     <lastmod>2015-03-19T21:15:07-04:00</lastmod>
   </url>
   
