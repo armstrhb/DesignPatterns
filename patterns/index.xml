@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Patterns on Design Patterns, explained simply</title>
-    <link>http://localhost:1313/DesignPatterns/patterns/</link>
+    <link>http://armstrhb.github.io/DesignPatterns/patterns/</link>
     <description>Recent content in Patterns on Design Patterns, explained simply</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 29 Mar 2015 14:33:00 -0400</lastBuildDate>
-    <atom:link href="http://localhost:1313/DesignPatterns/patterns/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://armstrhb.github.io/DesignPatterns/patterns/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Builder</title>
-      <link>http://localhost:1313/DesignPatterns/patterns/creational/builder/</link>
+      <link>http://armstrhb.github.io/DesignPatterns/patterns/creational/builder/</link>
       <pubDate>Sun, 29 Mar 2015 14:33:00 -0400</pubDate>
       
-      <guid>http://localhost:1313/DesignPatterns/patterns/creational/builder/</guid>
+      <guid>http://armstrhb.github.io/DesignPatterns/patterns/creational/builder/</guid>
       <description>
 
 &lt;p&gt;Sometimes object creation isn&amp;rsquo;t simple. Why not let something do it for you?&lt;/p&gt;
@@ -46,10 +46,10 @@ to the requester.&lt;/p&gt;
     
     <item>
       <title>State</title>
-      <link>http://localhost:1313/DesignPatterns/patterns/behavioral/state/</link>
+      <link>http://armstrhb.github.io/DesignPatterns/patterns/behavioral/state/</link>
       <pubDate>Sun, 22 Mar 2015 16:00:55 -0400</pubDate>
       
-      <guid>http://localhost:1313/DesignPatterns/patterns/behavioral/state/</guid>
+      <guid>http://armstrhb.github.io/DesignPatterns/patterns/behavioral/state/</guid>
       <description>
 
 &lt;p&gt;How can you make the same behavior do different things to an object?&lt;/p&gt;
@@ -86,10 +86,10 @@ were.&lt;/p&gt;
     
     <item>
       <title>Thread Pool</title>
-      <link>http://localhost:1313/DesignPatterns/patterns/concurrency/threadpool/</link>
+      <link>http://armstrhb.github.io/DesignPatterns/patterns/concurrency/threadpool/</link>
       <pubDate>Thu, 19 Mar 2015 23:24:49 -0400</pubDate>
       
-      <guid>http://localhost:1313/DesignPatterns/patterns/concurrency/threadpool/</guid>
+      <guid>http://armstrhb.github.io/DesignPatterns/patterns/concurrency/threadpool/</guid>
       <description>
 
 &lt;p&gt;Sometimes I really don&amp;rsquo;t want to do something twice, especially when it&amp;rsquo;s
@@ -125,10 +125,10 @@ pool&amp;rsquo;s objects.&lt;/p&gt;
     
     <item>
       <title>Strategy</title>
-      <link>http://localhost:1313/DesignPatterns/patterns/behavioral/strategy/</link>
+      <link>http://armstrhb.github.io/DesignPatterns/patterns/behavioral/strategy/</link>
       <pubDate>Thu, 19 Mar 2015 23:24:38 -0400</pubDate>
       
-      <guid>http://localhost:1313/DesignPatterns/patterns/behavioral/strategy/</guid>
+      <guid>http://armstrhb.github.io/DesignPatterns/patterns/behavioral/strategy/</guid>
       <description>
 
 &lt;p&gt;One problem.  Many different ways to solve it. How do we account for them all?&lt;/p&gt;
@@ -163,10 +163,10 @@ though, as long as it connects to the big red button that fires them off.&lt;/p&
     
     <item>
       <title>Facade</title>
-      <link>http://localhost:1313/DesignPatterns/patterns/structural/facade/</link>
+      <link>http://armstrhb.github.io/DesignPatterns/patterns/structural/facade/</link>
       <pubDate>Thu, 19 Mar 2015 23:22:18 -0400</pubDate>
       
-      <guid>http://localhost:1313/DesignPatterns/patterns/structural/facade/</guid>
+      <guid>http://armstrhb.github.io/DesignPatterns/patterns/structural/facade/</guid>
       <description>
 
 &lt;p&gt;Not everything&amp;rsquo;s simple. But what if I let something else handle the complexity
@@ -241,10 +241,10 @@ public class Parent implements Person {
     
     <item>
       <title>Observer</title>
-      <link>http://localhost:1313/DesignPatterns/patterns/behavioral/observer/</link>
+      <link>http://armstrhb.github.io/DesignPatterns/patterns/behavioral/observer/</link>
       <pubDate>Thu, 19 Mar 2015 22:47:14 -0400</pubDate>
       
-      <guid>http://localhost:1313/DesignPatterns/patterns/behavioral/observer/</guid>
+      <guid>http://armstrhb.github.io/DesignPatterns/patterns/behavioral/observer/</guid>
       <description>
 
 &lt;p&gt;Why poll when you can be notified?&lt;/p&gt;
@@ -275,10 +275,10 @@ ready to be eaten).&lt;/p&gt;
     
     <item>
       <title>Iterator</title>
-      <link>http://localhost:1313/DesignPatterns/patterns/behavioral/iterator/</link>
+      <link>http://armstrhb.github.io/DesignPatterns/patterns/behavioral/iterator/</link>
       <pubDate>Thu, 19 Mar 2015 22:31:21 -0400</pubDate>
       
-      <guid>http://localhost:1313/DesignPatterns/patterns/behavioral/iterator/</guid>
+      <guid>http://armstrhb.github.io/DesignPatterns/patterns/behavioral/iterator/</guid>
       <description>
 
 &lt;p&gt;What&amp;rsquo;s the easiest (or laziest) way to traverse through a list?&lt;/p&gt;

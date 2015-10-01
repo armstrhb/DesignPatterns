@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Creational on Design Patterns, explained simply</title>
-    <link>http://localhost:1313/DesignPatterns/categories/creational/</link>
+    <link>http://armstrhb.github.io/DesignPatterns/categories/creational/</link>
     <description>Recent content in Creational on Design Patterns, explained simply</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 29 Mar 2015 14:33:00 -0400</lastBuildDate>
-    <atom:link href="http://localhost:1313/DesignPatterns/categories/creational/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://armstrhb.github.io/DesignPatterns/categories/creational/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Builder</title>
-      <link>http://localhost:1313/DesignPatterns/patterns/creational/builder/</link>
+      <link>http://armstrhb.github.io/DesignPatterns/patterns/creational/builder/</link>
       <pubDate>Sun, 29 Mar 2015 14:33:00 -0400</pubDate>
       
-      <guid>http://localhost:1313/DesignPatterns/patterns/creational/builder/</guid>
+      <guid>http://armstrhb.github.io/DesignPatterns/patterns/creational/builder/</guid>
       <description>
 
 &lt;p&gt;Sometimes object creation isn&amp;rsquo;t simple. Why not let something do it for you?&lt;/p&gt;
