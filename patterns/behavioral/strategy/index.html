@@ -80,11 +80,97 @@ though, as long as it connects to the big red button that fires them off.</p>
 
 <h3 id="code-sample:010736ab8fdfc1cfa693a6e5a7960263">Code Sample</h3>
 
-<p><em>Coming soon.</em></p>
+<h4 id="java:010736ab8fdfc1cfa693a6e5a7960263">Java</h4>
+
+<pre><code class="java">
+public interface RaceTrack {
+  public void go();
+}
+
+public class RaceTrackLoop implements RaceTrack {
+  private RaceCar racer;
+
+  public void setRaceCar(RaceCar inCar) {
+    racer = inCar;
+  }
+
+  public void go() {
+    racer.accelerate(8);
+    racer.turnLeft(30);
+    racer.accelerate(23);
+    racer.turnLeft(50);
+    racer.cruise(10);
+    racer.turnLeft(110);
+    racer.accelerate(10);
+    racer.deccelerate(41);
+  }
+}
+
+public class RaceTrackStraightShot implements RaceTrack {
+  private RaceCar racer;
+
+  public void setRaceCar(RaceCar inCar) {
+    racer = inCar;
+  }
+
+  public void go() {
+    racer.accelerate(60);
+    racer.cruise(34);
+    racer.deccelerate(60);
+  }
+}
+
+public class Playset {
+  private List<RaceTrack> raceTracks;
+  private RaceTrack currentRaceTrack;
+  private RaceCar racer;
+
+
+  public Playset() {
+    racer = new RaceCar(Color.RED, Speed.NASTY_FAST);
+    raceTrack = new ArrayList<RaceTrack>();
+
+    raceTrack.add(new RaceTrackLoop());
+    raceTrack.add(new RaceTrackStraightShot());
+  }
+
+  public void pickCurrentRaceTrack(int index) {
+    if (index < 0 || index >= raceTracks.size())
+      return;
+
+    currentRaceTrack = raceTracks.get(index);
+  }
+
+  public void hitBigRedButton() {
+    if (currentRaceTrack == null)
+      return;
+
+    currentRaceTrack.setRaceCar(racer);
+    currentRaceTrack.go();
+  }
+}
+
+</code></pre>
 
 <h3 id="explanation:010736ab8fdfc1cfa693a6e5a7960263">Explanation</h3>
 
-<p><em>Coming soon.</em></p>
+<p>In the above code sample, a <code>RaceTrack</code> interface is declared, with
+an important method: <code>go()</code>.  The implementations,
+<code>RaceTrackLoop</code> and <code>RaceTrackStraightShot</code>, each flesh
+out the <code>go()</code> method by steering and maneuvering the given
+<code>RaceCar</code> object.</p>
+
+<p>Our <code>Playset</code> object then holds a list of <code>RaceTrack</code>
+objects (notice how we work on the interface level, not the implementation).
+A track is chosen by calling the <code>pickCurrentRaceTrack(int index)</code>
+method, and then we call the <code>hitBigRedButton()</code> method to kick things
+off.</p>
+
+<p>See how the changes within the <code>RaceTrack</code> implementations
+are transparent to the calling class, <code>Playset</code>? This is where
+the <strong>Strategy</strong> pattern shines. The same logic in the calling class can invoke
+a wide variety of different behaviors. As long as the entry point (in our case,
+the <code>go()</code> method) is the same, we&rsquo;re good to go.</p>
 
         </div>
       </div>

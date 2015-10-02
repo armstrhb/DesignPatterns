@@ -79,11 +79,97 @@ though, as long as it connects to the big red button that fires them off.&lt;/p&
 
 &lt;h3 id=&#34;code-sample:010736ab8fdfc1cfa693a6e5a7960263&#34;&gt;Code Sample&lt;/h3&gt;
 
-&lt;p&gt;&lt;em&gt;Coming soon.&lt;/em&gt;&lt;/p&gt;
+&lt;h4 id=&#34;java:010736ab8fdfc1cfa693a6e5a7960263&#34;&gt;Java&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code class=&#34;java&#34;&gt;
+public interface RaceTrack {
+  public void go();
+}
+
+public class RaceTrackLoop implements RaceTrack {
+  private RaceCar racer;
+
+  public void setRaceCar(RaceCar inCar) {
+    racer = inCar;
+  }
+
+  public void go() {
+    racer.accelerate(8);
+    racer.turnLeft(30);
+    racer.accelerate(23);
+    racer.turnLeft(50);
+    racer.cruise(10);
+    racer.turnLeft(110);
+    racer.accelerate(10);
+    racer.deccelerate(41);
+  }
+}
+
+public class RaceTrackStraightShot implements RaceTrack {
+  private RaceCar racer;
+
+  public void setRaceCar(RaceCar inCar) {
+    racer = inCar;
+  }
+
+  public void go() {
+    racer.accelerate(60);
+    racer.cruise(34);
+    racer.deccelerate(60);
+  }
+}
+
+public class Playset {
+  private List&lt;RaceTrack&gt; raceTracks;
+  private RaceTrack currentRaceTrack;
+  private RaceCar racer;
+
+
+  public Playset() {
+    racer = new RaceCar(Color.RED, Speed.NASTY_FAST);
+    raceTrack = new ArrayList&lt;RaceTrack&gt;();
+
+    raceTrack.add(new RaceTrackLoop());
+    raceTrack.add(new RaceTrackStraightShot());
+  }
+
+  public void pickCurrentRaceTrack(int index) {
+    if (index &lt; 0 || index &gt;= raceTracks.size())
+      return;
+
+    currentRaceTrack = raceTracks.get(index);
+  }
+
+  public void hitBigRedButton() {
+    if (currentRaceTrack == null)
+      return;
+
+    currentRaceTrack.setRaceCar(racer);
+    currentRaceTrack.go();
+  }
+}
+
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h3 id=&#34;explanation:010736ab8fdfc1cfa693a6e5a7960263&#34;&gt;Explanation&lt;/h3&gt;
 
-&lt;p&gt;&lt;em&gt;Coming soon.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;In the above code sample, a &lt;code&gt;RaceTrack&lt;/code&gt; interface is declared, with
+an important method: &lt;code&gt;go()&lt;/code&gt;.  The implementations,
+&lt;code&gt;RaceTrackLoop&lt;/code&gt; and &lt;code&gt;RaceTrackStraightShot&lt;/code&gt;, each flesh
+out the &lt;code&gt;go()&lt;/code&gt; method by steering and maneuvering the given
+&lt;code&gt;RaceCar&lt;/code&gt; object.&lt;/p&gt;
+
+&lt;p&gt;Our &lt;code&gt;Playset&lt;/code&gt; object then holds a list of &lt;code&gt;RaceTrack&lt;/code&gt;
+objects (notice how we work on the interface level, not the implementation).
+A track is chosen by calling the &lt;code&gt;pickCurrentRaceTrack(int index)&lt;/code&gt;
+method, and then we call the &lt;code&gt;hitBigRedButton()&lt;/code&gt; method to kick things
+off.&lt;/p&gt;
+
+&lt;p&gt;See how the changes within the &lt;code&gt;RaceTrack&lt;/code&gt; implementations
+are transparent to the calling class, &lt;code&gt;Playset&lt;/code&gt;? This is where
+the &lt;strong&gt;Strategy&lt;/strong&gt; pattern shines. The same logic in the calling class can invoke
+a wide variety of different behaviors. As long as the entry point (in our case,
+the &lt;code&gt;go()&lt;/code&gt; method) is the same, we&amp;rsquo;re good to go.&lt;/p&gt;
 </description>
     </item>
     
